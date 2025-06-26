@@ -5,7 +5,7 @@
 // RUN:   -emit-llvm %s -o - | opt -S -passes=mem2reg | \
 // RUN:   FileCheck --check-prefix=CHECK-RV64 %s
 
-#include <riscv_vector.h>
+#include <andes_vector.h>
 
 vfloat32mf2_t test_nds_vfwcvt_s_bf16_f32mf2_tu(vfloat32mf2_t vd,
                                                vbfloat16mf4_t vs2, size_t vl) {
